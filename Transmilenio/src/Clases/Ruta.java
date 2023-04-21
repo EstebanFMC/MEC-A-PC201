@@ -3,8 +3,6 @@ import java.util.ArrayList;
 
 
 public class Ruta {
-    
-    
  private String Codigo;
  private ArrayList<Estacion> CantEstaciones; 
  private ArrayList<Bus> BusesPasantes; 
@@ -17,11 +15,10 @@ public class Ruta {
         this.Horario = Horario;
     }
  
- 
- 
- 
  public void MostrarBuses(){
-     
+     System.out.println("Los buses que pasan por la ruta " + Codigo + " son: ");
+     for (Bus i : BusesPasantes)
+       System.out.println(i);  
  }
 
     public String getCodigo() {
